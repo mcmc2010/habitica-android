@@ -32,10 +32,13 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         testInstrumentationRunnerArguments["clearPackageData"] = "true"
 
-        @Suppress("UnstableApiUsage")
-        androidResources.localeFilters.addAll(
-            listOf("en", "bg", "de", "en-rGB", "es", "fr", "hr-rHR", "hu", "in", "it", "iw", "ja", "ko", "lt", "nl", "pl", "pt-rBR", "pt-rPT", "ru", "tr", "uk", "zh", "zh-rTW")
-        )
+ //       @Suppress("UnstableApiUsage")
+//        androidResources.localeFilters.addAll(
+//            listOf("en", "bg", "de", "en-rGB", "es", "fr", "hr-rHR", "hu", "in", "it", "iw", "ja", "ko", "lt", "nl", "pl", "pt-rBR", "pt-rPT", "ru", "tr", "uk", "zh", "zh-rTW")
+//        )
+        // 替代 localeFilters 的方式：指定支持的语言
+        resourceConfigurations += setOf("en", "zh")
+
 
         buildConfigField("String", "STORE", "\"google\"")
         buildConfigField("String", "TESTING_LEVEL", "\"production\"")

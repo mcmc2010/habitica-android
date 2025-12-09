@@ -1,6 +1,7 @@
 import org.gradle.api.JavaVersion.VERSION_11
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
+
 plugins {
     `kotlin-dsl`
 }
@@ -13,7 +14,9 @@ java {
     targetCompatibility = VERSION_11
 }
 
-kotlin.compilerOptions.jvmTarget = JvmTarget.JVM_11
+//kotlin.compilerOptions.jvmTarget = JvmTarget.JVM_11
+kotlin.jvmToolchain(11)
+
 
 dependencies {
     implementation(libs.android.gradlePlugin)

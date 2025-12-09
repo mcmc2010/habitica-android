@@ -82,7 +82,7 @@ android {
         }
     }
 
-    kotlin.jvmToolchain(11)
+    //kotlin.jvmToolchain(11)
     composeOptions.kotlinCompilerExtensionVersion = libs.versions.compose.compiler.get()
     kotlinOptions.jvmTarget = JavaVersion.VERSION_11.toString()
     flavorDimensions.add("buildType")
