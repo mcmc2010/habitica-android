@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-        <com.habitrpg.wearos.habitica.ui.views.TaskTextView
+        <com.trx.habitmeta.wearos.ui.views.TaskTextView
                 android:id="@+id/title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

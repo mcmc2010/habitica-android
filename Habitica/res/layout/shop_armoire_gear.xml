@@ -28,7 +28,7 @@
             android:textColor="@color/text_ternary"
             style="@style/Body2"
             android:gravity="center"/>
-        <com.habitrpg.common.habitica.views.PixelArtView
+        <com.trx.habitmeta.common.views.PixelArtView
             android:id="@+id/icon_view"
             android:layout_width="68dp"
             android:layout_height="68dp" />
@@ -39,7 +39,7 @@
         android:layout_height="wrap_content"
         android:background="@color/offset_background_30"
         android:padding="8dp">
-        <com.habitrpg.android.habitica.ui.views.CurrencyView
+        <com.trx.habitmeta.ui.views.CurrencyView
             android:id="@+id/currency_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

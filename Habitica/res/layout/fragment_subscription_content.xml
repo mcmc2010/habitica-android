@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.habitrpg.android.habitica.ui.views.HabiticaScrollView
+<com.trx.habitmeta.ui.views.HabiticaScrollView
         android:id="@+id/nested_scroll_view"
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
@@ -170,7 +170,7 @@
                     android:src="@drawable/subscribe_header_dark"
                     android:importantForAccessibility="no" />
 
-            <com.habitrpg.android.habitica.ui.views.subscriptions.SubscriptionDetailsView
+            <com.trx.habitmeta.ui.views.subscriptions.SubscriptionDetailsView
                     android:id="@+id/subscriptionDetails"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
@@ -252,7 +252,7 @@
                         android:progressTint="@color/green_100"/>
             </LinearLayout>
 
-            <com.habitrpg.android.habitica.ui.views.subscriptions.SubscriberBenefitView
+            <com.trx.habitmeta.ui.views.subscriptions.SubscriberBenefitView
                     android:id="@+id/subscriber_benefits"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -305,28 +305,28 @@
                     android:orientation="vertical"
                     android:layout_marginTop="@dimen/spacing_large">
 
-                <com.habitrpg.android.habitica.ui.views.subscriptions.SubscriptionOptionView
+                <com.trx.habitmeta.ui.views.subscriptions.SubscriptionOptionView
                         android:id="@+id/subscription1month"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:gemCapText="24"
                         app:recurringText="@string/month" />
 
-                <com.habitrpg.android.habitica.ui.views.subscriptions.SubscriptionOptionView
+                <com.trx.habitmeta.ui.views.subscriptions.SubscriptionOptionView
                         android:id="@+id/subscription3month"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:gemCapText="24"
                         app:recurringText="@string/three_months" />
 
-                <com.habitrpg.android.habitica.ui.views.subscriptions.SubscriptionOptionView
+                <com.trx.habitmeta.ui.views.subscriptions.SubscriptionOptionView
                         android:id="@+id/subscription6month"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:gemCapText="24"
                         app:recurringText="@string/six_months" />
 
-                <com.habitrpg.android.habitica.ui.views.subscriptions.SubscriptionOptionView
+                <com.trx.habitmeta.ui.views.subscriptions.SubscriptionOptionView
                         android:id="@+id/subscription12month"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -440,4 +440,4 @@
                 android:layout_height="30dp"
                 android:background="@color/brand_400"/>
     </LinearLayout>
-</com.habitrpg.android.habitica.ui.views.HabiticaScrollView>
+</com.trx.habitmeta.ui.views.HabiticaScrollView>

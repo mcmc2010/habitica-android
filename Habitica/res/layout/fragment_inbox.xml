@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-    <com.habitrpg.android.habitica.ui.views.HabiticaScrollView
+    <com.trx.habitmeta.ui.views.HabiticaScrollView
         android:id="@+id/nested_scroll_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -44,5 +44,5 @@
                     android:divider="?android:listDivider"
                     android:showDividers="middle" />
         </LinearLayout>
-    </com.habitrpg.android.habitica.ui.views.HabiticaScrollView>
+    </com.trx.habitmeta.ui.views.HabiticaScrollView>
 </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

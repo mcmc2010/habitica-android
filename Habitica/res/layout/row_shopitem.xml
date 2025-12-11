@@ -15,7 +15,7 @@
         android:orientation="vertical"
         android:background="@drawable/layout_rounded_bg_shopitem"
         android:layout_centerInParent="true">
-        <com.habitrpg.common.habitica.views.PixelArtView
+        <com.trx.habitmeta.common.views.PixelArtView
             android:id="@+id/imageView"
             android:layout_width="@dimen/shopitem_image_size"
             android:layout_height="@dimen/shopitem_image_size"
@@ -28,7 +28,7 @@
             android:minHeight="40dp"
             android:gravity="center"
             android:background="@drawable/layout_rounded_bg_shopitem_price">
-            <com.habitrpg.android.habitica.ui.views.CurrencyView
+            <com.trx.habitmeta.ui.views.CurrencyView
                 android:id="@+id/priceLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

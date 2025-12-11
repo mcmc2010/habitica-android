@@ -7,7 +7,7 @@
     app:startDestination="@id/tasksFragment">
     <fragment
         android:id="@+id/equipmentDetailFragment"
-        android:name="com.habitrpg.android.habitica.ui.fragments.inventory.equipment.EquipmentDetailFragment"
+        android:name="com.trx.habitmeta.ui.fragments.inventory.equipment.EquipmentDetailFragment"
         android:label="@string/sidebar_equipment" >
         <argument
             android:name="type"
@@ -20,7 +20,7 @@
     </fragment>
     <fragment
         android:id="@+id/tasksFragment"
-        android:name="com.habitrpg.android.habitica.ui.fragments.tasks.TasksFragment">
+        android:name="com.trx.habitmeta.ui.fragments.tasks.TasksFragment">
         <argument
             android:name="taskType"
             app:argType="string"
@@ -37,17 +37,17 @@
     </fragment>
     <activity
         android:id="@+id/taskFormActivity"
-        android:name="com.habitrpg.android.habitica.ui.activities.TaskFormActivity">
+        android:name="com.trx.habitmeta.ui.activities.TaskFormActivity">
 
     </activity>
     <activity
         android:id="@+id/taskSummaryActivity"
-        android:name="com.habitrpg.android.habitica.ui.activities.TaskSummaryActivity">
+        android:name="com.trx.habitmeta.ui.activities.TaskSummaryActivity">
 
     </activity>
     <fragment
         android:id="@+id/partyFragment"
-        android:name="com.habitrpg.android.habitica.ui.fragments.social.party.PartyFragment"
+        android:name="com.trx.habitmeta.ui.fragments.social.party.PartyFragment"
         android:label="@string/sidebar_party">
         <deepLink app:uri="habitica.com/party" />
         <action
@@ -65,34 +65,34 @@
     </fragment>
     <fragment
         android:id="@+id/noPartyFragment"
-        android:name="com.habitrpg.android.habitica.ui.fragments.social.party.NoPartyFragmentFragment"
+        android:name="com.trx.habitmeta.ui.fragments.social.party.NoPartyFragmentFragment"
         android:label="@string/sidebar_party">
     </fragment>
     <fragment
         android:id="@+id/partyInvitationFragment"
-        android:name="com.habitrpg.android.habitica.ui.fragments.social.party.PartyInvitePagerFragment"
+        android:name="com.trx.habitmeta.ui.fragments.social.party.PartyInvitePagerFragment"
         android:label="@string/find_new_member">
     </fragment>
     <fragment
         android:id="@+id/questDetailFragment"
-        android:name="com.habitrpg.android.habitica.ui.fragments.social.QuestDetailFragment">
+        android:name="com.trx.habitmeta.ui.fragments.social.QuestDetailFragment">
         <deepLink app:uri="habitica.com/party/quest" />
     </fragment>
     <fragment
         android:id="@+id/skillsFragment"
-        android:name="com.habitrpg.android.habitica.ui.fragments.skills.SkillsFragment"
+        android:name="com.trx.habitmeta.ui.fragments.skills.SkillsFragment"
         android:label="@string/sidebar_skills">
         <deepLink app:uri="habitica.com/user/skills" />
     </fragment>
     <fragment
         android:id="@+id/statsFragment"
-        android:name="com.habitrpg.android.habitica.ui.fragments.StatsFragment"
+        android:name="com.trx.habitmeta.ui.fragments.StatsFragment"
         android:label="@string/stats">
         <deepLink app:uri="habitica.com/user/stats" />
     </fragment>
     <fragment
         android:id="@+id/challengesOverviewFragment"
-        android:name="com.habitrpg.android.habitica.ui.fragments.social.challenges.ChallengesOverviewFragment"
+        android:name="com.trx.habitmeta.ui.fragments.social.challenges.ChallengesOverviewFragment"
         android:label="@string/sidebar_challenges" >
         <deepLink app:uri="habitica.com/challenges/myChallenges" />
         <deepLink app:uri="habitica.com/challenges/findChallenges" />
@@ -102,7 +102,7 @@
     </fragment>
     <fragment
         android:id="@+id/avatarOverviewFragment"
-        android:name="com.habitrpg.android.habitica.ui.fragments.inventory.customization.AvatarOverviewFragment"
+        android:name="com.trx.habitmeta.ui.fragments.inventory.customization.AvatarOverviewFragment"
         android:label="@string/sidebar_avatar" >
         <deepLink app:uri="habitica.com/user/avatar" />
         <action
@@ -117,7 +117,7 @@
     </fragment>
     <fragment
             android:id="@+id/composeAvatarEquipmentFragment"
-            android:name="com.habitrpg.android.habitica.ui.fragments.inventory.customization.ComposeAvatarEquipmentFragment"
+            android:name="com.trx.habitmeta.ui.fragments.inventory.customization.ComposeAvatarEquipmentFragment"
             android:label="@string/sidebar_avatar" >
         <argument
                 android:name="type"
@@ -128,7 +128,7 @@
     </fragment>
     <fragment
         android:id="@+id/equipmentOverviewFragment"
-        android:name="com.habitrpg.android.habitica.ui.fragments.inventory.customization.EquipmentOverviewFragment"
+        android:name="com.trx.habitmeta.ui.fragments.inventory.customization.EquipmentOverviewFragment"
         android:label="@string/sidebar_equipment" >
         <action
             android:id="@+id/openAvatarDetail"
@@ -139,7 +139,7 @@
     </fragment>
     <fragment
         android:id="@+id/itemsFragment"
-        android:name="com.habitrpg.android.habitica.ui.fragments.inventory.items.ItemsFragment"
+        android:name="com.trx.habitmeta.ui.fragments.inventory.items.ItemsFragment"
         android:label="@string/sidebar_items">
         <deepLink app:uri="habitica.com/inventory/items" />
         <argument
@@ -150,7 +150,7 @@
     </fragment>
     <fragment
         android:id="@+id/stableFragment"
-        android:name="com.habitrpg.android.habitica.ui.fragments.inventory.stable.StableFragment"
+        android:name="com.trx.habitmeta.ui.fragments.inventory.stable.StableFragment"
         android:label="@string/sidebar_stable" >
         <deepLink app:uri="habitica.com/inventory/stable" />
         <action
@@ -162,7 +162,7 @@
     </fragment>
     <activity
         android:id="@+id/armoireActivity"
-        android:name="com.habitrpg.android.habitica.ui.activities.ArmoireActivity"
+        android:name="com.trx.habitmeta.ui.activities.ArmoireActivity"
         android:label="@string/armoire" >
         <argument
             android:name="type"
@@ -179,12 +179,12 @@
     </activity>
     <activity
         android:id="@+id/deathActivity"
-        android:name="com.habitrpg.android.habitica.ui.activities.DeathActivity"
+        android:name="com.trx.habitmeta.ui.activities.DeathActivity"
         android:label="@string/faint_header" >
     </activity>
     <activity
         android:id="@+id/subscriptionPurchaseActivity"
-        android:name="com.habitrpg.android.habitica.ui.activities.GemPurchaseActivity"
+        android:name="com.trx.habitmeta.ui.activities.GemPurchaseActivity"
         android:label="@string/gem_purchase_toolbartitle" >
         <deepLink app:uri="habitica.com/user/settings/subscription" />
         <argument
@@ -194,7 +194,7 @@
     </activity>
     <activity
         android:id="@+id/gemPurchaseActivity"
-        android:name="com.habitrpg.android.habitica.ui.activities.GemPurchaseActivity"
+        android:name="com.trx.habitmeta.ui.activities.GemPurchaseActivity"
         android:label="@string/gem_purchase_toolbartitle">
         <deepLink app:uri="habitica.com/user/settings/gems" />
         <argument
@@ -204,7 +204,7 @@
     </activity>
     <activity
         android:id="@+id/giftGemsActivity"
-        android:name="com.habitrpg.android.habitica.ui.activities.GiftGemsActivity"
+        android:name="com.trx.habitmeta.ui.activities.GiftGemsActivity"
         android:label="@string/gift_gems" >
         <argument
             android:name="userID"
@@ -217,7 +217,7 @@
     </activity>
     <activity
         android:id="@+id/giftSubscriptionActivity"
-        android:name="com.habitrpg.android.habitica.ui.activities.GiftSubscriptionActivity"
+        android:name="com.trx.habitmeta.ui.activities.GiftSubscriptionActivity"
         android:label="@string/gift_subscription" >
         <argument
             android:name="userID"
@@ -230,19 +230,19 @@
     </activity>
     <activity
         android:id="@+id/birthdayActivity"
-        android:name="com.habitrpg.android.habitica.ui.activities.BirthdayActivity"
+        android:name="com.trx.habitmeta.ui.activities.BirthdayActivity"
         android:label="@string/gem_purchase_toolbartitle" >
         <deepLink app:uri="habitica.com/promo/birthday" />
     </activity>
     <fragment
         android:id="@+id/newsFragment"
-        android:name="com.habitrpg.android.habitica.ui.fragments.NewsFragment"
+        android:name="com.trx.habitmeta.ui.fragments.NewsFragment"
         android:label="@string/sidebar_news">
         <deepLink app:uri="habitica.com/static/new-stuff" />
     </fragment>
     <fragment
         android:id="@+id/FAQOverviewFragment"
-        android:name="com.habitrpg.android.habitica.ui.fragments.support.FAQOverviewFragment"
+        android:name="com.trx.habitmeta.ui.fragments.support.FAQOverviewFragment"
         android:label="@string/habitica_questions">
         <deepLink app:uri="habitica.com/static/faq" />
         <action
@@ -251,7 +251,7 @@
     </fragment>
     <fragment
         android:id="@+id/FAQDetailFragment"
-        android:name="com.habitrpg.android.habitica.ui.fragments.support.FAQDetailFragment"
+        android:name="com.trx.habitmeta.ui.fragments.support.FAQDetailFragment"
         android:label="@string/sidebar_help" >
         <argument
             android:name="position"
@@ -268,13 +268,13 @@
     </fragment>
     <fragment
         android:id="@+id/aboutFragment"
-        android:name="com.habitrpg.android.habitica.ui.fragments.AboutFragment"
+        android:name="com.trx.habitmeta.ui.fragments.AboutFragment"
         android:label="@string/sidebar_about">
         <deepLink app:uri="habitica.com/static/about" />
     </fragment>
     <fragment
         android:id="@+id/inboxFragment"
-        android:name="com.habitrpg.android.habitica.ui.fragments.social.InboxOverviewFragment"
+        android:name="com.trx.habitmeta.ui.fragments.social.InboxOverviewFragment"
         android:label="@string/sidebar_inbox">
         <deepLink app:uri="habitica.com/private-messages" />
         <action
@@ -283,7 +283,7 @@
     </fragment>
     <fragment
         android:id="@+id/guildFragment"
-        android:name="com.habitrpg.android.habitica.ui.fragments.social.guilds.GuildFragment"
+        android:name="com.trx.habitmeta.ui.fragments.social.guilds.GuildFragment"
         android:label="@string/guild" >
         <deepLink app:uri="habitica.com/groups/guild/{groupID}" />
         <argument
@@ -300,7 +300,7 @@
     </fragment>
     <fragment
         android:id="@+id/ComposeAvatarCustomizationFragment"
-        android:name="com.habitrpg.android.habitica.ui.fragments.inventory.customization.ComposeAvatarCustomizationFragment"
+        android:name="com.trx.habitmeta.ui.fragments.inventory.customization.ComposeAvatarCustomizationFragment"
         android:label="@string/sidebar_avatar" >
         <argument
             android:name="type"
@@ -311,14 +311,14 @@
     </fragment>
     <activity
         android:id="@+id/prefsActivity"
-        android:name="com.habitrpg.android.habitica.ui.activities.PrefsActivity"
+        android:name="com.trx.habitmeta.ui.activities.PrefsActivity"
         android:label="@string/app_settings"
         tools:layout="@layout/activity_prefs">
         <deepLink app:uri="habitica.com/settings" />
     </activity>
     <fragment
         android:id="@+id/inboxMessageListFragment"
-        android:name="com.habitrpg.android.habitica.ui.fragments.social.InboxMessageListFragment"
+        android:name="com.trx.habitmeta.ui.fragments.social.InboxMessageListFragment"
         android:label="@string/inbox" >
         <argument
             android:name="userID"
@@ -330,13 +330,13 @@
     </fragment>
     <activity
         android:id="@+id/notificationsActivity"
-        android:name="com.habitrpg.android.habitica.ui.activities.NotificationsActivity"
+        android:name="com.trx.habitmeta.ui.activities.NotificationsActivity"
         android:label="@string/notifications">
         <deepLink app:uri="habitica.com/user/notifications" />
     </activity>
     <fragment
         android:id="@+id/petDetailRecyclerFragment"
-        android:name="com.habitrpg.android.habitica.ui.fragments.inventory.stable.PetDetailRecyclerFragment">
+        android:name="com.trx.habitmeta.ui.fragments.inventory.stable.PetDetailRecyclerFragment">
         <argument
             android:name="type"
             app:argType="string" />
@@ -350,7 +350,7 @@
     </fragment>
     <fragment
         android:id="@+id/mountDetailRecyclerFragment"
-        android:name="com.habitrpg.android.habitica.ui.fragments.inventory.stable.MountDetailRecyclerFragment">
+        android:name="com.trx.habitmeta.ui.fragments.inventory.stable.MountDetailRecyclerFragment">
         <argument
             android:name="type"
             app:argType="string" />
@@ -364,7 +364,7 @@
     </fragment>
     <fragment
         android:id="@+id/challengeDetailFragment"
-        android:name="com.habitrpg.android.habitica.ui.fragments.social.challenges.ChallengeDetailFragment"
+        android:name="com.trx.habitmeta.ui.fragments.social.challenges.ChallengeDetailFragment"
         android:label="@string/challenge">
         <deepLink app:uri="habitica.com/challenges/{challengeID}" />
         <argument
@@ -373,7 +373,7 @@
     </fragment>
     <activity
         android:id="@+id/fullProfileActivity"
-        android:name="com.habitrpg.android.habitica.ui.activities.FullProfileActivity"
+        android:name="com.trx.habitmeta.ui.activities.FullProfileActivity"
         android:label="FullProfileActivity">
         <argument
             android:name="userID"
@@ -381,14 +381,14 @@
     </activity>
     <activity
         android:id="@+id/guidelinesActivity"
-        android:name="com.habitrpg.android.habitica.ui.activities.GuidelinesActivity" />
+        android:name="com.trx.habitmeta.ui.activities.GuidelinesActivity" />
     <activity
         android:id="@+id/groupFormActivity"
-        android:name="com.habitrpg.android.habitica.ui.activities.GroupFormActivity"
+        android:name="com.trx.habitmeta.ui.activities.GroupFormActivity"
         android:label="GroupFormActivity" />
     <activity
         android:id="@+id/classSelectionActivity"
-        android:name="com.habitrpg.android.habitica.ui.activities.ClassSelectionActivity"
+        android:name="com.trx.habitmeta.ui.activities.ClassSelectionActivity"
         android:label="ClassSelectionActivity" >
         <argument
             android:name="isClassSelected"
@@ -401,7 +401,7 @@
     </activity>
     <activity
         android:id="@+id/reportMessageActivity"
-        android:name="com.habitrpg.android.habitica.ui.activities.ReportMessageActivity"
+        android:name="com.trx.habitmeta.ui.activities.ReportMessageActivity"
         android:label="ReportMessageActivity" >
         <argument
             android:name="text"
@@ -431,7 +431,7 @@
         app:destination="@id/armoireActivity" />
     <fragment
         android:id="@+id/achievementsFragment"
-        android:name="com.habitrpg.android.habitica.ui.fragments.AchievementsFragment"
+        android:name="com.trx.habitmeta.ui.fragments.AchievementsFragment"
         android:label="@string/sidebar_achievements" >
         <deepLink app:uri="habitica.com/user/achievements" />
         <argument
@@ -441,42 +441,42 @@
     </fragment>
     <fragment
         android:id="@+id/marketFragment"
-        android:name="com.habitrpg.android.habitica.ui.fragments.inventory.shops.MarketFragment"
+        android:name="com.trx.habitmeta.ui.fragments.inventory.shops.MarketFragment"
         android:label="@string/market">
         <deepLink app:uri="habitica.com/inventory/market" />
         <deepLink app:uri="habitica.com/shops/market" />
     </fragment>
     <fragment
         android:id="@+id/questShopFragment"
-        android:name="com.habitrpg.android.habitica.ui.fragments.inventory.shops.QuestShopFragment"
+        android:name="com.trx.habitmeta.ui.fragments.inventory.shops.QuestShopFragment"
         android:label="@string/questShop">
         <deepLink app:uri="habitica.com/inventory/quests" />
         <deepLink app:uri="habitica.com/shops/quests" />
     </fragment>
     <fragment
         android:id="@+id/seasonalShopFragment"
-        android:name="com.habitrpg.android.habitica.ui.fragments.inventory.shops.SeasonalShopFragment"
+        android:name="com.trx.habitmeta.ui.fragments.inventory.shops.SeasonalShopFragment"
         android:label="@string/seasonalShop">
         <deepLink app:uri="habitica.com/inventory/seasonal" />
         <deepLink app:uri="habitica.com/shops/seasonal" />
     </fragment>
     <fragment
         android:id="@+id/timeTravelersShopFragment"
-        android:name="com.habitrpg.android.habitica.ui.fragments.inventory.shops.TimeTravelersShopFragment"
+        android:name="com.trx.habitmeta.ui.fragments.inventory.shops.TimeTravelersShopFragment"
         android:label="@string/timeTravelers">
         <deepLink app:uri="habitica.com/inventory/time" />
         <deepLink app:uri="habitica.com/shops/time" />
     </fragment>
     <fragment
         android:id="@+id/customizationsShopFragment"
-        android:name="com.habitrpg.android.habitica.ui.fragments.inventory.shops.CustomizationsShopFragment"
+        android:name="com.trx.habitmeta.ui.fragments.inventory.shops.CustomizationsShopFragment"
         android:label="@string/customizations">
         <deepLink app:uri="habitica.com/inventory/customizations" />
         <deepLink app:uri="habitica.com/shops/customizations" />
     </fragment>
     <fragment
         android:id="@+id/supportMainFragment"
-        android:name="com.habitrpg.android.habitica.ui.fragments.support.SupportMainFragment"
+        android:name="com.trx.habitmeta.ui.fragments.support.SupportMainFragment"
         android:label="@string/support" >
         <action
             android:id="@+id/showFAQFragment"
@@ -484,23 +484,23 @@
     </fragment>
     <fragment
         android:id="@+id/bugFixFragment"
-        android:name="com.habitrpg.android.habitica.ui.fragments.support.BugFixFragment"
+        android:name="com.trx.habitmeta.ui.fragments.support.BugFixFragment"
         android:label="@string/bugs_fixes" />
     <activity
         android:id="@+id/adventureGuideActivity"
-        android:name="com.habitrpg.android.habitica.ui.activities.AdventureGuideActivity"
+        android:name="com.trx.habitmeta.ui.activities.AdventureGuideActivity"
         android:label="">
         <deepLink app:uri="habitica.com/user/onboarding" />
     </activity>
     <fragment
         android:id="@+id/promoInfoFragment"
-        android:name="com.habitrpg.android.habitica.ui.fragments.PromoInfoFragment"
+        android:name="com.trx.habitmeta.ui.fragments.PromoInfoFragment"
         android:label="">
         <deepLink app:uri="habitica.com/promo/info" />
     </fragment>
     <fragment
         android:id="@+id/promoWebFragment"
-        android:name="com.habitrpg.android.habitica.ui.fragments.PromoWebFragment"
+        android:name="com.trx.habitmeta.ui.fragments.PromoWebFragment"
         android:label="">
         <argument
             android:name="url"

@@ -27,7 +27,7 @@
             android:scaleType="center"
             android:src="@drawable/checkmark" />
     </FrameLayout>
-    <com.habitrpg.android.habitica.ui.views.EllipsisTextView
+    <com.trx.habitmeta.ui.views.EllipsisTextView
         android:id="@+id/checkedTextView"
         style="@style/Body2"
         android:layout_width="wrap_content"

@@ -8,7 +8,7 @@
     tools:parentTag="LinearLayout"
     tools:orientation="vertical">
 
-    <com.habitrpg.common.habitica.views.PixelArtView
+    <com.trx.habitmeta.common.views.PixelArtView
         android:id="@+id/imageView"
         android:layout_width="@dimen/shopitem_image_size"
         android:layout_height="@dimen/shopitem_image_size"

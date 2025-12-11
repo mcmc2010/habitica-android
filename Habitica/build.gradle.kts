@@ -14,21 +14,24 @@ plugins {
     id(libs.plugins.habitrpg.application.get().pluginId)
     id(libs.plugins.habitrpg.convention.get().pluginId)
     id(libs.plugins.crashlytics.get().pluginId)
-    id(libs.plugins.firebase.perf.get().pluginId)
+//    id(libs.plugins.firebase.perf.get().pluginId)
     id(libs.plugins.google.service.get().pluginId)
 }
 
 android {
-    compileSdk = libs.versions.targetSdk.get().toInt()
-    namespace = "com.habitrpg.android.habitica"
+    compileSdk = libs.versions.compileSdk.get().toInt()
+    //namespace = "com.trx.habitmeta"
+    namespace = "com.trx.habitmeta"
 
     defaultConfig {
-        applicationId = "com.habitrpg.android.habitica"
+        //applicationId = "com.trx.habitmeta"
+        applicationId = "com.trx.habitmeta"
+
         minSdk = libs.versions.minSdk.get().toInt()
-        compileSdk = libs.versions.targetSdk.get().toInt()
+        compileSdk = libs.versions.compileSdk.get().toInt()
+        targetSdk = libs.versions.targetSdk.get().toInt()
         vectorDrawables.useSupportLibrary = true
 
-        targetSdk = libs.versions.targetSdk.get().toInt()
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         testInstrumentationRunnerArguments["clearPackageData"] = "true"
 
@@ -62,30 +65,30 @@ android {
             ext["enableCrashlytics"] = false
             ext["alwaysUpdateBuildId"] = false
             enableUnitTestCoverage = false
-            resValue("string", "content_provider", "com.habitrpg.android.habitica.debug.fileprovider")
-            resValue("string", "app_name", "Habitica Debug")
+            resValue("string", "content_provider", "com.trx.habitmeta.debug.fileprovider")
+            resValue("string", "app_name", "Habitmeta-Debug")
         }
-        create("debugIAP") {
-            signingConfigs.asMap["release"]?.let { releaseSigning -> signingConfig = releaseSigning }
-            isDebuggable = true
-            isMinifyEnabled = false
-            enableUnitTestCoverage = false
-            enableAndroidTestCoverage = false
-            proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
-            // Disable fabric build ID generation for debug builds
-            ext["enableCrashlytics"] = false
-            ext["alwaysUpdateBuildId"] = false
-            resValue("string", "content_provider", "com.habitrpg.android.habitica.fileprovider")
-            resValue("string", "app_name", "Habitica Debug")
-        }
+//        create("debugIAP") {
+//            signingConfigs.asMap["release"]?.let { releaseSigning -> signingConfig = releaseSigning }
+//            isDebuggable = true
+//            isMinifyEnabled = false
+//            enableUnitTestCoverage = false
+//            enableAndroidTestCoverage = false
+//            proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
+//            // Disable fabric build ID generation for debug builds
+//            ext["enableCrashlytics"] = false
+//            ext["alwaysUpdateBuildId"] = false
+//            resValue("string", "content_provider", "com.trx.habitmeta.fileprovider")
+//            resValue("string", "app_name", "Habitica Debug")
+//        }
         release {
             signingConfigs.asMap["release"]?.let { releaseSigning -> signingConfig = releaseSigning }
             isDebuggable = false
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
-            resValue("string", "content_provider", "com.habitrpg.android.habitica.fileprovider")
-            resValue("string", "app_name", "Habitica")
+            resValue("string", "content_provider", "com.trx.habitmeta.fileprovider")
+            resValue("string", "app_name", "Habitmeta")
         }
     }
 
@@ -98,8 +101,8 @@ android {
             res.srcDirs("res")
             assets.srcDirs("assets")
         }
-        getByName("test") { java.srcDir("src/test/java") }
-        getByName("debugIAP") { java.srcDirs("src/debug/java") }
+        //getByName("test") { java.srcDir("src/test/java") }
+        //getByName("debugIAP") { java.srcDirs("src/debug/java") }
         getByName("release") { java.srcDirs("src/release/java") }
     }
 
@@ -167,7 +170,7 @@ dependencies {
     implementation(libs.coil.compose)
 
     //Analytics
-    implementation(libs.amplitude.analytic)
+    //implementation(libs.amplitude.analytic)
 
     implementation(libs.shimmer)
 
@@ -213,9 +216,9 @@ dependencies {
 
     //Tests
     testImplementation(libs.bundles.test.implementation)
-    androidTestImplementation(libs.bundles.android.test.implementation)
+    //androidTestImplementation(libs.bundles.android.test.implementation)
     androidTestImplementation(libs.kaspresso) { exclude(module = "protobuf-lite") }
     debugImplementation(libs.test.fragment)
-    debugImplementation(libs.test.monitor)
+    //debugImplementation(libs.test.monitor)
     androidTestUtil(libs.test.orchestrator)
 }

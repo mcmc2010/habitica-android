@@ -13,7 +13,7 @@
         android:clipToOutline="true"
         android:clipToPadding="true"
         android:layout_marginTop="8dp">
-    <com.habitrpg.android.habitica.ui.views.NPCBannerView
+    <com.trx.habitmeta.ui.views.NPCBannerView
         android:id="@+id/npcBannerView"
         android:layout_width="match_parent"
         android:layout_height="@dimen/shop_scene_height"

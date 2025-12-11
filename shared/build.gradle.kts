@@ -7,7 +7,7 @@ plugins {
     id("kotlin-parcelize")
     id(libs.plugins.ksp.get().pluginId)
     id(libs.plugins.habitrpg.convention.get().pluginId)
-    id(libs.plugins.kotest.get().pluginId)
+    //id(libs.plugins.kotest.get().pluginId)
 }
 
 kotlin {
@@ -27,28 +27,28 @@ kotlin {
                 implementation(libs.kotlinx.coroutine)
             }
         }
-        commonTest {
-            dependencies {
-                implementation(kotlin("test")) // This brings all the platform dependencies automatically
-            }
-        }
+//        commonTest {
+//            dependencies {
+//                implementation(kotlin("test")) // This brings all the platform dependencies automatically
+//            }
+//        }
     }
 }
 
 android {
-    compileSdk = libs.versions.targetSdk.get().toInt()
-    namespace = "com.habitrpg.shared.habitica"
+    compileSdk = libs.versions.compileSdk.get().toInt()
+    namespace = "com.trx.habitmeta.shared"
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
-    defaultConfig.minSdk = 21
+    defaultConfig.minSdk = libs.versions.minSdk.get().toInt()
 
-    buildTypes {
-        create("debugIAP") {
-            initWith(buildTypes["debug"])
-            isMinifyEnabled = false
-            isJniDebuggable = true
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-        }
-    }
+//    buildTypes {
+//        create("debugIAP") {
+//            initWith(buildTypes["debug"])
+//            isMinifyEnabled = false
+//            isJniDebuggable = true
+//            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+//        }
+//    }
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11

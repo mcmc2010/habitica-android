@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.habitrpg.android.habitica.ui.views.login.LockableScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.trx.habitmeta.ui.views.login.LockableScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
@@ -9,7 +9,7 @@
         android:scrollbars="none"
         tools:showIn="@layout/activity_login">
 
-    <com.habitrpg.android.habitica.ui.views.login.LoginBackgroundView
+    <com.trx.habitmeta.ui.views.login.LoginBackgroundView
             android:id="@+id/background_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -48,6 +48,6 @@
                 android:layout_alignParentTop="true"
                 android:scaleType="centerCrop"
                 android:layout_marginTop="130dp" />
-    </com.habitrpg.android.habitica.ui.views.login.LoginBackgroundView>
+    </com.trx.habitmeta.ui.views.login.LoginBackgroundView>
 
-</com.habitrpg.android.habitica.ui.views.login.LockableScrollView>
+</com.trx.habitmeta.ui.views.login.LockableScrollView>

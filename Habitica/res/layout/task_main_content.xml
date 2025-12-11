@@ -43,7 +43,7 @@
             android:layout_marginStart="10dp"
             />
     </LinearLayout>
-        <com.habitrpg.android.habitica.ui.views.EllipsisTextView
+        <com.trx.habitmeta.ui.views.EllipsisTextView
             android:id="@+id/checkedTextView"
             style="@style/Subheader3"
             android:textColor="?attr/textColorPrimary"
@@ -54,7 +54,7 @@
             android:letterSpacing="0.025"
             tools:text="Habit Title" />
 
-        <com.habitrpg.android.habitica.ui.views.EllipsisTextView
+        <com.trx.habitmeta.ui.views.EllipsisTextView
             android:id="@+id/notesTextView"
             style="@style/Caption2.Regular"
             android:layout_width="wrap_content"

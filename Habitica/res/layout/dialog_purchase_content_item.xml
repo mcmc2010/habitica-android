@@ -11,7 +11,7 @@
     tools:parentTag="LinearLayout"
     tools:orientation="vertical">
 
-    <com.habitrpg.common.habitica.views.PixelArtView
+    <com.trx.habitmeta.common.views.PixelArtView
         android:id="@+id/imageView"
         android:layout_width="@dimen/shopitem_image_size"
         android:layout_height="@dimen/shopitem_image_size"
@@ -35,7 +35,7 @@
         tools:text="These are the notes"
         android:gravity="center"/>
 
-    <com.habitrpg.android.habitica.ui.views.tasks.form.StepperValueFormView
+    <com.trx.habitmeta.ui.views.tasks.form.StepperValueFormView
         android:id="@+id/stepper_view"
         android:layout_width="match_parent"
         android:layout_height="56dp"

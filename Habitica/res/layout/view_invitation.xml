@@ -13,20 +13,20 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <com.habitrpg.android.habitica.ui.RoundedFrameLayout
+            <com.trx.habitmeta.ui.RoundedFrameLayout
                 android:layout_width="@dimen/avatar_chat_size"
                 android:layout_height="@dimen/avatar_chat_size"
                 android:clipChildren="true"
                 android:layout_marginEnd="@dimen/spacing_medium"
                 android:background="@drawable/rounded_avatar_bg">
-                <com.habitrpg.common.habitica.views.AvatarView
+                <com.trx.habitmeta.common.views.AvatarView
                     android:id="@+id/groupleader_avatar_view"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
                     app:showMount="false"
                     app:showPet="false" />
-            </com.habitrpg.android.habitica.ui.RoundedFrameLayout>
+            </com.trx.habitmeta.ui.RoundedFrameLayout>
 
             <TextView
                 android:id="@+id/groupleader_text_view"

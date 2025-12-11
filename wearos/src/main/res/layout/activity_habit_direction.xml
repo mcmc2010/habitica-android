@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <com.habitrpg.wearos.habitica.ui.views.HabitDirectionPickerButton
+    <com.trx.habitmeta.wearos.ui.views.HabitDirectionPickerButton
         android:id="@+id/plus_button"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -34,7 +34,7 @@
         android:layout_width="1dp"
         android:layout_height="0dp"
         android:layout_weight="1" />
-    <com.habitrpg.wearos.habitica.ui.views.HabitDirectionPickerButton
+    <com.trx.habitmeta.wearos.ui.views.HabitDirectionPickerButton
         android:id="@+id/minus_button"
         android:layout_width="match_parent"
         android:layout_height="50dp"

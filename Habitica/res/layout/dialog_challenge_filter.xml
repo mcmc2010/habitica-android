@@ -37,7 +37,7 @@
             android:visibility="invisible"/>
     </LinearLayout>
 
-        <com.habitrpg.android.habitica.ui.helpers.RecyclerViewEmptySupport
+        <com.trx.habitmeta.ui.helpers.RecyclerViewEmptySupport
             android:id="@+id/challenge_filter_recycler_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -4,13 +4,13 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <com.habitrpg.android.habitica.ui.views.ValidatingEditText
+    <com.trx.habitmeta.ui.views.ValidatingEditText
         android:id="@+id/email_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
         app:hint="@string/email" />
-    <com.habitrpg.android.habitica.ui.views.ValidatingEditText
+    <com.trx.habitmeta.ui.views.ValidatingEditText
         android:id="@+id/password_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -40,21 +40,21 @@
                 android:title="@string/login_methods"
                 android:key="account_info"
                 android:layout="@layout/preference_category">
-                <com.habitrpg.android.habitica.ui.views.ExtraLabelPreference
+                <com.trx.habitmeta.ui.views.ExtraLabelPreference
                     android:title="@string/password"
                     android:key="password"
                     android:layout="@layout/preference_button"
                     />
-                <com.habitrpg.android.habitica.ui.views.ExtraLabelPreference
+                <com.trx.habitmeta.ui.views.ExtraLabelPreference
                     android:title="@string/google"
                     android:key="google_auth"
                     android:layout="@layout/preference_button"
                     />
-                <com.habitrpg.android.habitica.ui.views.ExtraLabelPreference
+                <com.trx.habitmeta.ui.views.ExtraLabelPreference
                     android:title="@string/facebook"
                     android:key="facebook_auth"
                     />
-                <com.habitrpg.android.habitica.ui.views.ExtraLabelPreference
+                <com.trx.habitmeta.ui.views.ExtraLabelPreference
                     android:title="@string/apple"
                     android:key="apple_auth"
                     />
@@ -183,7 +183,7 @@
             android:summary="@string/pref_first_day_of_the_week_summary"
             android:title="@string/pref_first_day_of_the_week_title" />
 
-        <com.habitrpg.android.habitica.ui.views.HabiticaListPreference
+        <com.trx.habitmeta.ui.views.HabiticaListPreference
             android:key="cds_time"
             android:entries="@array/cds_labels"
             android:entryValues="@array/cds_values"
@@ -211,7 +211,7 @@
             android:title="@string/pref_reminder_checkbox"
             android:layout="@layout/preference_child_summary"/>
 
-        <com.habitrpg.android.habitica.prefs.TimePreference
+        <com.trx.habitmeta.prefs.TimePreference
             android:key="reminder_time"
             android:defaultValue="19:30"
             android:title="@string/pref_reminder_picker"

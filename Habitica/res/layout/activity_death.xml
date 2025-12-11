@@ -95,7 +95,7 @@
                     android:text="@string/faint_button"
                     android:textStyle="bold" />
 
-            <com.habitrpg.android.habitica.ui.views.ads.AdButton
+            <com.trx.habitmeta.ui.views.ads.AdButton
                     android:id="@+id/ad_button"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"

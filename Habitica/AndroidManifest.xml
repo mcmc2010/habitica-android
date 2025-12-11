@@ -2,7 +2,7 @@
 <!--suppress AndroidDomInspection -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.habitrpg.android.habitica"
+    package="com.trx.habitmeta"
     android:installLocation="auto" >
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -110,7 +110,7 @@
             android:windowSoftInputMode="adjustResize">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.habitrpg.android.habitica.ui.activities.MainActivity" />
+                android:value="com.trx.habitmeta.ui.activities.MainActivity" />
         </activity>
         <activity
             android:name=".ui.activities.SkillTasksActivity">

@@ -22,14 +22,14 @@
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
     </com.google.android.material.appbar.AppBarLayout>
-<com.habitrpg.android.habitica.ui.views.HabiticaScrollView
+<com.trx.habitmeta.ui.views.HabiticaScrollView
         android:id="@+id/nested_scroll_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
 
-    tools:context="com.habitrpg.android.habitica.ui.activities.ChallengeFormActivity">
+    tools:context="com.trx.habitmeta.ui.activities.ChallengeFormActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -219,14 +219,14 @@
                 tools:visibility="visible"/>
         </LinearLayout>
 
-        <com.habitrpg.android.habitica.ui.helpers.RecyclerViewEmptySupport
+        <com.trx.habitmeta.ui.helpers.RecyclerViewEmptySupport
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:nestedScrollingEnabled="false"
             android:background="?attr/colorContentBackground"
             android:id="@+id/create_challenge_task_list">
 
-        </com.habitrpg.android.habitica.ui.helpers.RecyclerViewEmptySupport>
+        </com.trx.habitmeta.ui.helpers.RecyclerViewEmptySupport>
     </LinearLayout>
-</com.habitrpg.android.habitica.ui.views.HabiticaScrollView>
+</com.trx.habitmeta.ui.views.HabiticaScrollView>
 </LinearLayout>

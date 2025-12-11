@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <com.habitrpg.wearos.habitica.ui.views.CircularProgressView
+    <com.trx.habitmeta.wearos.ui.views.CircularProgressView
         android:id="@+id/hp_bar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

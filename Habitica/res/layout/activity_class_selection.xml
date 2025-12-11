@@ -38,7 +38,7 @@
                 android:orientation="vertical"
                 android:gravity="center_horizontal"
                 android:layout_marginEnd="48dp">
-                <com.habitrpg.common.habitica.views.AvatarView
+                <com.trx.habitmeta.common.views.AvatarView
                     android:id="@+id/healerAvatarView"
                     android:layout_width="75dp"
                     android:layout_height="75dp"
@@ -62,7 +62,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:gravity="center_horizontal">
-                <com.habitrpg.common.habitica.views.AvatarView
+                <com.trx.habitmeta.common.views.AvatarView
                     android:id="@+id/mageAvatarView"
                     android:layout_width="75dp"
                     android:layout_height="75dp"
@@ -94,7 +94,7 @@
                 android:orientation="vertical"
                 android:gravity="center_horizontal"
                 android:layout_marginEnd="48dp">
-                <com.habitrpg.common.habitica.views.AvatarView
+                <com.trx.habitmeta.common.views.AvatarView
                     android:id="@+id/rogueAvatarView"
                     android:layout_width="75dp"
                     android:layout_height="75dp"
@@ -118,7 +118,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:gravity="center_horizontal">
-                <com.habitrpg.common.habitica.views.AvatarView
+                <com.trx.habitmeta.common.views.AvatarView
                     android:id="@+id/warriorAvatarView"
                     android:layout_width="75dp"
                     android:layout_height="75dp"

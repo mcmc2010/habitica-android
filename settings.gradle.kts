@@ -45,4 +45,6 @@ plugins {
 }
 
 rootProject.name = "habitica-android"
-include(":Habitica", ":wearos", ":common", ":shared")
+include(":Habitica",
+    //":wearos",
+    ":common", ":shared")

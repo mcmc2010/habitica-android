@@ -66,10 +66,10 @@
 }
 
 #keep Habitica code
--keep class com.habitrpg.android.habitica.** { *; }
--keep class com.habitrpg.common.habitica.** { *; }
--keep class com.habitrpg.shared.habitica.** { *; }
--keep class com.habitrpg.android.habitica.extensions.ViewGroupExt
+-keep class com.trx.habitmeta.** { *; }
+-keep class com.trx.habitmeta.common.** { *; }
+-keep class com.trx.habitmeta.shared.** { *; }
+-keep class com.trx.habitmeta.extensions.ViewGroupExt
 #realm
 -keep class io.realm.annotations.RealmModule
 -keep @io.realm.annotations.RealmModule class *
@@ -117,7 +117,7 @@
 -dontwarn rx.**
 -dontwarn com.android.volley.toolbox.**
 -dontwarn com.facebook.infer.**
--dontwarn com.habitrpg.android.habitica.ui.views.bottombar.**
+-dontwarn com.trx.habitmeta.ui.views.bottombar.**
 #-ignorewarnings
 
 -keep class com.google.firebase.provider.FirebaseInitProvider

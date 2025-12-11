@@ -7,7 +7,7 @@
     android:clipChildren="true"
     android:outlineProvider="background"
     android:clipToPadding="true">
-    <com.habitrpg.common.habitica.views.AvatarView
+    <com.trx.habitmeta.common.views.AvatarView
         android:id="@+id/avatar_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

@@ -21,7 +21,7 @@
         android:foreground="?android:attr/selectableItemBackground"
         android:padding="12dp">
 
-        <com.habitrpg.common.habitica.views.PixelArtView
+        <com.trx.habitmeta.common.views.PixelArtView
             android:id="@+id/skill_image"
             android:layout_width="40dp"
             android:layout_height="40dp"

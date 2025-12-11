@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:layout_height="wrap_content"
     tools:layout_width="match_parent"
-    tools:parentTag="com.habitrpg.wearos.habitica.ui.views.TextActionChipView">
+    tools:parentTag="com.trx.habitmeta.wearos.ui.views.TextActionChipView">
 
     <ImageView
         android:id="@+id/chip_imageview"

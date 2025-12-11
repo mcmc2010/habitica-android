@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.habitrpg.wearos.habitica.ui.views.HabiticaScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.trx.habitmeta.wearos.ui.views.HabiticaScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -44,7 +44,7 @@
                 android:layout_marginTop="5dp"
                 android:textSize="12sp"/>
 
-            <com.habitrpg.wearos.habitica.ui.views.ConnectedActionChipView
+            <com.trx.habitmeta.wearos.ui.views.ConnectedActionChipView
                 android:id="@+id/edit_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -53,4 +53,4 @@
                 app:chipText="@string/edit_on_phone" />
 
         </LinearLayout>
-</com.habitrpg.wearos.habitica.ui.views.HabiticaScrollView>
+</com.trx.habitmeta.wearos.ui.views.HabiticaScrollView>

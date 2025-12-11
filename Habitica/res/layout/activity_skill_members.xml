@@ -26,7 +26,7 @@
     </com.google.android.material.appbar.AppBarLayout>
 
 
-    <com.habitrpg.android.habitica.ui.helpers.RecyclerViewEmptySupport
+    <com.trx.habitmeta.ui.helpers.RecyclerViewEmptySupport
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

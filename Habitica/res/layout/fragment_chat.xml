@@ -36,13 +36,13 @@
             android:textSize="16sp" />
     </LinearLayout>
 
-    <com.habitrpg.android.habitica.ui.helpers.RecyclerViewEmptySupport
+    <com.trx.habitmeta.ui.helpers.RecyclerViewEmptySupport
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
             app:windowInsetBottom="false" />
-    <com.habitrpg.android.habitica.ui.views.social.ChatBarView
+    <com.trx.habitmeta.ui.views.social.ChatBarView
             android:id="@+id/chatBarView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />

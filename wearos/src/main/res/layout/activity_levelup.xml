@@ -45,7 +45,7 @@
             android:text="@string/continue_text"
             style="@style/ChipButton.Small.Yellow"/>
     </LinearLayout>
-    <com.habitrpg.wearos.habitica.ui.views.CircularProgressView
+    <com.trx.habitmeta.wearos.ui.views.CircularProgressView
         android:id="@+id/exp_bar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

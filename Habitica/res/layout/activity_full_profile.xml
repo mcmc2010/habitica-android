@@ -20,7 +20,7 @@
             app:layout_scrollFlags="scroll|enterAlways"
             app:popupTheme="@style/PopupTheme"/>
     </com.google.android.material.appbar.AppBarLayout>
-    <com.habitrpg.android.habitica.ui.views.HabiticaScrollView
+    <com.trx.habitmeta.ui.views.HabiticaScrollView
         android:id="@+id/nested_scroll_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -368,7 +368,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 tools:text="#" />
-                            <com.habitrpg.common.habitica.views.PixelArtView
+                            <com.trx.habitmeta.common.views.PixelArtView
                                 android:id="@+id/current_pet_drawee"
                                 android:layout_width="40dp"
                                 android:layout_height="40dp"/>
@@ -387,7 +387,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 tools:text="#" />
-                            <com.habitrpg.common.habitica.views.PixelArtView
+                            <com.trx.habitmeta.common.views.PixelArtView
                                 android:id="@+id/current_mount_drawee"
                                 android:layout_width="40dp"
                                 android:layout_height="40dp"/>
@@ -416,7 +416,7 @@
                         android:text="@string/profile_achievements"
                         android:textStyle="bold" />
 
-                    <com.habitrpg.android.habitica.ui.helpers.RecyclerViewEmptySupport
+                    <com.trx.habitmeta.ui.helpers.RecyclerViewEmptySupport
                         android:id="@+id/achievement_group_list"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -427,5 +427,5 @@
             </FrameLayout>
 
         </LinearLayout>
-    </com.habitrpg.android.habitica.ui.views.HabiticaScrollView>
+    </com.trx.habitmeta.ui.views.HabiticaScrollView>
 </LinearLayout>

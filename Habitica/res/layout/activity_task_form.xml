@@ -6,7 +6,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:background="?attr/colorTintedBackground"
-        tools:context="com.habitrpg.android.habitica.ui.activities.FixCharacterValuesActivity">
+        tools:context="com.trx.habitmeta.ui.activities.FixCharacterValuesActivity">
 
     <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/appbar"
@@ -26,7 +26,7 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <com.habitrpg.android.habitica.ui.views.HabiticaScrollView
+    <com.trx.habitmeta.ui.views.HabiticaScrollView
         android:id="@+id/nested_scroll_view"
             android:orientation="vertical"
             android:layout_width="match_parent"
@@ -124,7 +124,7 @@
                         android:text="@string/cost"
                         style="@style/TaskFormSectionheader" />
 
-                <com.habitrpg.android.habitica.ui.views.tasks.form.StepperValueFormView
+                <com.trx.habitmeta.ui.views.tasks.form.StepperValueFormView
                         android:id="@+id/reward_value"
                         android:layout_width="match_parent"
                         android:layout_height="56dp" />
@@ -136,7 +136,7 @@
                         android:text="@string/checklist"
                         style="@style/TaskFormSectionheader" />
 
-                <com.habitrpg.android.habitica.ui.views.tasks.form.ChecklistContainer
+                <com.trx.habitmeta.ui.views.tasks.form.ChecklistContainer
                         android:id="@+id/checklist_container"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
@@ -184,7 +184,7 @@
                         android:text="@string/scheduling"
                         style="@style/TaskFormSectionheader" />
 
-                <com.habitrpg.android.habitica.ui.views.tasks.form.TaskSchedulingControls
+                <com.trx.habitmeta.ui.views.tasks.form.TaskSchedulingControls
                         android:id="@+id/task_scheduling_controls"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
@@ -262,7 +262,7 @@
                             android:textSize="12sp" />
                 </RelativeLayout>
 
-                <com.habitrpg.android.habitica.ui.views.tasks.form.ReminderContainer
+                <com.trx.habitmeta.ui.views.tasks.form.ReminderContainer
                         android:id="@+id/reminders_container"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
@@ -319,5 +319,5 @@
                         android:divider="@drawable/tag_divider" />
             </LinearLayout>
         </LinearLayout>
-    </com.habitrpg.android.habitica.ui.views.HabiticaScrollView>
+    </com.trx.habitmeta.ui.views.HabiticaScrollView>
 </LinearLayout>

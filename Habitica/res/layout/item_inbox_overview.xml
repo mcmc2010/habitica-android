@@ -6,20 +6,20 @@
     android:layout_height="wrap_content"
     android:padding="@dimen/spacing_large"
     android:baselineAligned="false">
-    <com.habitrpg.android.habitica.ui.RoundedFrameLayout
+    <com.trx.habitmeta.ui.RoundedFrameLayout
         android:layout_width="@dimen/avatar_chat_size"
         android:layout_height="@dimen/avatar_chat_size"
         android:clipChildren="true"
         android:layout_marginEnd="@dimen/spacing_medium"
         android:background="@drawable/rounded_avatar_bg">
-        <com.habitrpg.common.habitica.views.AvatarView
+        <com.trx.habitmeta.common.views.AvatarView
             android:id="@+id/avatar_view"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_gravity="center"
             app:showMount="false"
             app:showPet="false" />
-    </com.habitrpg.android.habitica.ui.RoundedFrameLayout>
+    </com.trx.habitmeta.ui.RoundedFrameLayout>
     <LinearLayout
         android:layout_width="0dp"
         android:layout_weight="1"
@@ -30,7 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <com.habitrpg.android.habitica.ui.views.UsernameLabel
+            <com.trx.habitmeta.ui.views.UsernameLabel
                 android:id="@+id/display_name_textview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />

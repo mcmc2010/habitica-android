@@ -148,7 +148,7 @@
                 android:layout_height="73dp"
                 android:background="@color/offset_background_30">
 
-            <com.habitrpg.android.habitica.ui.views.CurrencyView
+            <com.trx.habitmeta.ui.views.CurrencyView
                     android:id="@+id/change_class_currency_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

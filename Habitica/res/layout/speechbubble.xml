@@ -24,7 +24,7 @@
         android:paddingTop="24dp"
         android:layout_marginBottom="10dp">
 
-        <com.habitrpg.android.habitica.ui.views.Typewriter
+        <com.trx.habitmeta.ui.views.Typewriter
             android:id="@+id/textView"
             style="@style/SubHeader1"
             android:layout_width="match_parent"

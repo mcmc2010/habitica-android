@@ -3,21 +3,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.habitrpg.wearos.habitica.ui.views.HabiticaRecyclerView
+    <com.trx.habitmeta.wearos.ui.views.HabiticaRecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="vertical" />
-    <com.habitrpg.wearos.habitica.ui.views.AddTaskButton
+    <com.trx.habitmeta.wearos.ui.views.AddTaskButton
         android:id="@+id/add_task_button"
         android:layout_width="match_parent"
         android:layout_height="39dp"
         android:layout_gravity="center|bottom"
-        app:layout_behavior="com.habitrpg.wearos.habitica.util.ScrollAwayBehavior"/>
-    <com.habitrpg.wearos.habitica.ui.views.TimeText
+        app:layout_behavior="com.trx.habitmeta.wearos.util.ScrollAwayBehavior"/>
+    <com.trx.habitmeta.wearos.ui.views.TimeText
         android:id="@+id/timeText"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:titleTextColor="@color/text_primary"
-        app:layout_behavior="com.habitrpg.wearos.habitica.util.TopScrollAwayBehavior" />
+        app:layout_behavior="com.trx.habitmeta.wearos.util.TopScrollAwayBehavior" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

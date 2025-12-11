@@ -13,7 +13,7 @@
         android:importantForAccessibility="no"
         />
 
-    <com.habitrpg.wearos.habitica.ui.views.CircularProgressView
+    <com.trx.habitmeta.wearos.ui.views.CircularProgressView
         android:id="@+id/hp_bar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -21,7 +21,7 @@
         app:backgroundArcColor="@color/watch_gray_1"
         app:offset="5dp" />
 
-    <com.habitrpg.wearos.habitica.ui.views.CircularProgressView
+    <com.trx.habitmeta.wearos.ui.views.CircularProgressView
         android:id="@+id/exp_bar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -29,7 +29,7 @@
         app:backgroundArcColor="@color/watch_gray_1"
         app:offset="14dp" />
 
-    <com.habitrpg.wearos.habitica.ui.views.CircularProgressView
+    <com.trx.habitmeta.wearos.ui.views.CircularProgressView
         android:id="@+id/mp_bar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -43,20 +43,20 @@
         android:layout_centerInParent="true"
         android:orientation="vertical">
 
-        <com.habitrpg.wearos.habitica.ui.views.StatValueView
+        <com.trx.habitmeta.wearos.ui.views.StatValueView
             android:id="@+id/hp_stat_value"
             android:layout_width="match_parent"
             android:layout_marginTop="5dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"/>
 
-        <com.habitrpg.wearos.habitica.ui.views.StatValueView
+        <com.trx.habitmeta.wearos.ui.views.StatValueView
             android:id="@+id/exp_stat_value"
             android:layout_width="match_parent"
             android:layout_marginBottom="8dp"
             android:layout_height="wrap_content" />
 
-        <com.habitrpg.wearos.habitica.ui.views.StatValueView
+        <com.trx.habitmeta.wearos.ui.views.StatValueView
             android:id="@+id/mp_stat_value"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />

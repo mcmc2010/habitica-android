@@ -5,7 +5,7 @@
         android:layout_height="wrap_content"
         android:minHeight="52dp"
         style="@style/Chip">
-        <com.habitrpg.wearos.habitica.ui.views.TaskTextView
+        <com.trx.habitmeta.wearos.ui.views.TaskTextView
             android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

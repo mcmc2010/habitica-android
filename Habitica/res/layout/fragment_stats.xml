@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.habitrpg.android.habitica.ui.views.HabiticaScrollView
+<com.trx.habitmeta.ui.views.HabiticaScrollView
         android:id="@+id/nested_scroll_view"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -49,7 +49,7 @@
             android:gravity="center"
             android:padding="@dimen/spacing_large"
             style="@style/Caption4"/>
-        <com.habitrpg.android.habitica.ui.views.stats.StatsView
+        <com.trx.habitmeta.ui.views.stats.StatsView
             android:id="@+id/strengthStatsView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -57,7 +57,7 @@
             app:titleBackgroundColor="@color/background_red"
             app:statsColor="@color/text_red"
             android:layout_marginBottom="12dp"/>
-        <com.habitrpg.android.habitica.ui.views.stats.StatsView
+        <com.trx.habitmeta.ui.views.stats.StatsView
             android:id="@+id/intelligenceStatsView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -65,7 +65,7 @@
             app:titleBackgroundColor="@color/background_blue"
             app:statsColor="@color/text_blue"
             android:layout_marginBottom="12dp"/>
-        <com.habitrpg.android.habitica.ui.views.stats.StatsView
+        <com.trx.habitmeta.ui.views.stats.StatsView
             android:id="@+id/constitutionStatsView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -73,7 +73,7 @@
             app:titleBackgroundColor="@color/background_yellow"
             app:statsColor="@color/text_yellow"
             android:layout_marginBottom="12dp"/>
-        <com.habitrpg.android.habitica.ui.views.stats.StatsView
+        <com.trx.habitmeta.ui.views.stats.StatsView
             android:id="@+id/perceptionStatsView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -234,4 +234,4 @@
                 android:layout_marginBottom="28dp"/>
         </LinearLayout>
     </LinearLayout>
-</com.habitrpg.android.habitica.ui.views.HabiticaScrollView>
+</com.trx.habitmeta.ui.views.HabiticaScrollView>

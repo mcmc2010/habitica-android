@@ -1,3 +1,4 @@
+import com.android.build.api.dsl.Packaging
 import java.io.FileInputStream
 import java.util.Properties
 
@@ -9,8 +10,8 @@ plugins {
 }
 
 android {
-    namespace = "com.habitrpg.common.habitica"
-    compileSdk = libs.versions.targetSdk.get().toInt()
+    namespace = "com.trx.habitmeta.common"
+    compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
         minSdk = libs.versions.minSdk.get().toInt()
@@ -26,10 +27,10 @@ android {
             isMinifyEnabled = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
-        register("debugIAP") {
-            isMinifyEnabled = false
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-        }
+//        register("debugIAP") {
+//            isMinifyEnabled = false
+//            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+//        }
     }
 
     buildFeatures {
@@ -52,35 +53,38 @@ android {
     }
 
     productFlavors {
-        register("dev") {
-            dimension = "buildType"
-        }
+//        register("dev") {
+//            dimension = "buildType"
+//        }
 
-        register("staff") {
-            dimension = "buildType"
-            buildConfigField("String", "TESTING_LEVEL", "\"staff\"")
-        }
+//        register("staff") {
+//            dimension = "buildType"
+//            buildConfigField("String", "TESTING_LEVEL", "\"staff\"")
+//        }
 
-        register("partners") {
-            dimension = "buildType"
-            buildConfigField("String", "TESTING_LEVEL", "\"partners\"")
-        }
+//        register("partners") {
+//            dimension = "buildType"
+//            buildConfigField("String", "TESTING_LEVEL", "\"partners\"")
+//        }
 
-        register("alpha") {
-            dimension = "buildType"
-            buildConfigField("String", "TESTING_LEVEL", "\"alpha\"")
-        }
+//        register("alpha") {
+//            dimension = "buildType"
+//            buildConfigField("String", "TESTING_LEVEL", "\"alpha\"")
+//        }
 
-        register("beta") {
-            dimension = "buildType"
-            buildConfigField("String", "TESTING_LEVEL", "\"beta\"")
-        }
+//        register("beta") {
+//            dimension = "buildType"
+//            buildConfigField("String", "TESTING_LEVEL", "\"beta\"")
+//        }
 
         register("prod") {
             dimension = "buildType"
             buildConfigField("String", "TESTING_LEVEL", "\"production\"")
         }
     }
+
+    // 排除所有 META-INF/LICENSE.md 文件（无论大小写）
+    packaging.resources.excludes.add("META-INF/*")
 
     //kotlin.jvmToolchain(11)
     composeOptions.kotlinCompilerExtensionVersion = libs.versions.compose.compiler.get()
@@ -112,7 +116,7 @@ dependencies {
     implementation(libs.material)
 
     testImplementation(libs.bundles.test.implementation)
-    androidTestImplementation(libs.bundles.android.test.implementation)
+    //androidTestImplementation(libs.bundles.android.test.implementation)
 
     implementation(libs.activity.compose)
     implementation(libs.runtime.livedata)

@@ -28,7 +28,7 @@
             android:gravity="center_horizontal"
             android:orientation="vertical">
 
-            <com.habitrpg.android.habitica.ui.views.CurrencyView
+            <com.trx.habitmeta.ui.views.CurrencyView
                 android:id="@+id/gold_view"
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
@@ -59,13 +59,13 @@
                         android:layout_centerInParent="true"
                         android:src="@drawable/circle_gray_700" />
 
-                    <com.habitrpg.common.habitica.views.PixelArtView
+                    <com.trx.habitmeta.common.views.PixelArtView
                         android:id="@+id/icon_view"
                         android:layout_width="136dp"
                         android:layout_height="136dp"
                         android:layout_centerInParent="true" />
 
-                    <com.habitrpg.android.habitica.ui.views.SparkView
+                    <com.trx.habitmeta.ui.views.SparkView
                         android:id="@+id/left_spark_view"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -77,7 +77,7 @@
                         app:maxSpacing="8dp"
                         app:thickness="6dp" />
 
-                    <com.habitrpg.android.habitica.ui.views.SparkView
+                    <com.trx.habitmeta.ui.views.SparkView
                         android:id="@+id/right_spark_view"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -181,7 +181,7 @@
                     android:textStyle="bold" />
             </LinearLayout>
 
-            <com.habitrpg.android.habitica.ui.views.ads.AdButton
+            <com.trx.habitmeta.ui.views.ads.AdButton
                 android:id="@+id/ad_button"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"

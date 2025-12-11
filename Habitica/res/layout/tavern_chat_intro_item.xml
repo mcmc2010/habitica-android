@@ -7,7 +7,7 @@
     android:gravity="center_horizontal"
     android:orientation="vertical">
 
-    <com.habitrpg.common.habitica.views.AvatarView
+    <com.trx.habitmeta.common.views.AvatarView
         android:id="@+id/avatar_view"
         android:layout_width="87dp"
         android:layout_height="69dp"
@@ -30,7 +30,7 @@
         android:textColor="@color/gray_300"
         android:textSize="12sp" />
 
-    <com.habitrpg.android.habitica.ui.views.UsernameLabel
+    <com.trx.habitmeta.ui.views.UsernameLabel
         android:id="@+id/display_name_textview"
         android:layout_width="wrap_content"
         android:layout_height="24dp"

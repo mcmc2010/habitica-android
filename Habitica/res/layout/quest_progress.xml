@@ -47,7 +47,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:clipChildren="true">
-        <com.habitrpg.common.habitica.views.PixelArtView
+        <com.trx.habitmeta.common.views.PixelArtView
             android:id="@+id/questImageView"
             android:layout_width="219dp"
             android:layout_height="wrap_content"
@@ -56,7 +56,7 @@
             android:paddingStart="@dimen/spacing_large"
             android:paddingEnd="@dimen/spacing_large"
             android:layout_gravity="center_horizontal" />
-        <com.habitrpg.common.habitica.views.PixelArtView
+        <com.trx.habitmeta.common.views.PixelArtView
             android:id="@+id/questFlourishesImageView"
             android:layout_width="310dp"
             android:layout_height="219dp"
@@ -93,7 +93,7 @@
             android:textSize="12sp"
             android:textColor="@color/red_100"/>
     </LinearLayout>
-    <com.habitrpg.common.habitica.views.ValueBar
+    <com.trx.habitmeta.common.views.ValueBar
         android:id="@+id/bossHealthView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -128,7 +128,7 @@
             android:layout_marginStart="@dimen/spacing_medium"
             android:textColor="@color/white"/>
     </LinearLayout>
-    <com.habitrpg.common.habitica.views.ValueBar
+    <com.trx.habitmeta.common.views.ValueBar
         android:id="@+id/bossRageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -174,7 +174,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="@dimen/spacing_large"
         android:layout_marginBottom="@dimen/spacing_large" />
-    <com.habitrpg.android.habitica.ui.views.CollapsibleSectionView
+    <com.trx.habitmeta.ui.views.CollapsibleSectionView
         android:id="@+id/questDescriptionSection"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -188,5 +188,5 @@
         android:textColor="@color/white"
         android:textSize="14sp"
         android:lineSpacingExtra="2dp"/>
-    </com.habitrpg.android.habitica.ui.views.CollapsibleSectionView>
+    </com.trx.habitmeta.ui.views.CollapsibleSectionView>
 </LinearLayout>

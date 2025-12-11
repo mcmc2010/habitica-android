@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.habitrpg.android.habitica.ui.views.HabiticaScrollView
+<com.trx.habitmeta.ui.views.HabiticaScrollView
         android:id="@+id/nested_scroll_view" xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -133,26 +133,26 @@
             android:paddingBottom="@dimen/spacing_medium"
             android:background="?attr/colorContentBackground"
             android:orientation="horizontal">
-            <com.habitrpg.android.habitica.ui.RoundedFrameLayout
+            <com.trx.habitmeta.ui.RoundedFrameLayout
                 android:layout_width="@dimen/avatar_chat_size"
                 android:layout_height="@dimen/avatar_chat_size"
                 android:clipChildren="true"
                 android:layout_marginEnd="@dimen/spacing_medium"
                 android:background="@drawable/rounded_avatar_bg">
-                <com.habitrpg.common.habitica.views.AvatarView
+                <com.trx.habitmeta.common.views.AvatarView
                     android:id="@+id/creator_avatarview"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
                     app:showMount="false"
                     app:showPet="false" />
-            </com.habitrpg.android.habitica.ui.RoundedFrameLayout>
+            </com.trx.habitmeta.ui.RoundedFrameLayout>
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_weight="1">
-                <com.habitrpg.android.habitica.ui.views.UsernameLabel
+                <com.trx.habitmeta.ui.views.UsernameLabel
                     android:id="@+id/creator_label"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
@@ -168,7 +168,7 @@
                 android:layout_height="match_parent"
                 style="@style/Base.Widget.AppCompat.Button.Borderless"/>
         </LinearLayout>
-        <com.habitrpg.android.habitica.ui.views.CollapsibleSectionView
+        <com.trx.habitmeta.ui.views.CollapsibleSectionView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:title="@string/challenge_categories"
@@ -183,7 +183,7 @@
                 android:background="@drawable/layout_rounded_bg_window"
                 android:padding="@dimen/spacing_large"
                 tools:text="There’s always more to learn! Maybe it’s a specialized topic you’re interested in, or maybe it’s the experiences of a notable contributor. Read about it and you may win 15 gems!" />
-        </com.habitrpg.android.habitica.ui.views.CollapsibleSectionView>
+        </com.trx.habitmeta.ui.views.CollapsibleSectionView>
 
         <LinearLayout
             android:id="@+id/task_group_layout"
@@ -210,4 +210,4 @@
                 style="@style/HabiticaButton.Red"/>
         </FrameLayout>
     </LinearLayout>
-</com.habitrpg.android.habitica.ui.views.HabiticaScrollView>
+</com.trx.habitmeta.ui.views.HabiticaScrollView>

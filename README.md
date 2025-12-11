@@ -1,15 +1,7 @@
 # Habitica for Android
 
-[Habitica](https://habitica.com) is an open source habit building program which treats your life like a Role Playing Game. Level up as you succeed, lose HP as you fail, earn money to buy weapons and armor. This repository is related to the Android Native Application.
-
-It's also on Google Play:
-
-<a href="https://play.google.com/store/apps/details?id=com.habitrpg.android.habitica">
-  <img alt="Get it on Google Play"
-       width="185"
-       src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" />
-</a>
-
+[Habitica](https://habitica.com) is an open source habit building program which treats your life like a Role Playing Game.  
+Level up as you succeed, lose HP as you fail, earn money to buy weapons and armor. This repository is related to the Android Native Application.
 Having the application installed is a good way to be notified of new releases. However, clicking "Watch" on this
 repository will allow GitHub to email you whenever we publish a release.
 
@@ -70,7 +62,7 @@ We use Kotlin and follow the code style based on the [Android Kotlin Style Guide
 
    b. Create a new project called Habitica
 
-   c. Create two apps in the project: `com.habitrpg.android.habitica` and `com.habitrpg.android.habitica.debug`
+   c. Create two apps in the project: `com.trx.habitmeta` and `com.trx.habitmeta.debug`
 
    d. Creating each app will generate a `google-services.json` file. Download the `google-services.json` file from the second app and put it in `\Habitica\` and `\wearos\`
 

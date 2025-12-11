@@ -10,20 +10,20 @@
     android:paddingEnd="@dimen/chat_horizontal_inset"
     android:paddingTop="@dimen/spacing_small"
     android:paddingBottom="@dimen/spacing_small">
-    <com.habitrpg.android.habitica.ui.RoundedFrameLayout
+    <com.trx.habitmeta.ui.RoundedFrameLayout
         android:layout_width="@dimen/avatar_chat_size"
         android:layout_height="@dimen/avatar_chat_size"
         android:clipChildren="true"
         android:layout_marginEnd="@dimen/spacing_medium"
         android:background="@drawable/rounded_avatar_bg">
-        <com.habitrpg.common.habitica.views.AvatarView
+        <com.trx.habitmeta.common.views.AvatarView
             android:id="@+id/avatar_view"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_gravity="center"
             app:showMount="false"
             app:showPet="false" />
-    </com.habitrpg.android.habitica.ui.RoundedFrameLayout>
+    </com.trx.habitmeta.ui.RoundedFrameLayout>
         <LinearLayout
             android:id="@+id/message_wrapper"
             android:layout_width="match_parent"
@@ -43,7 +43,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                    <com.habitrpg.android.habitica.ui.views.UsernameLabel
+                    <com.trx.habitmeta.ui.views.UsernameLabel
                         android:id="@+id/user_label"
                         style="@style/ChatMessageUserTextViewStyle"
                         android:layout_width="wrap_content"
