@@ -181,6 +181,7 @@
                     android:textStyle="bold" />
             </LinearLayout>
 
+            <!--
             <com.trx.habitmeta.ui.views.ads.AdButton
                 android:id="@+id/ad_button"
                 android:layout_width="match_parent"
@@ -189,7 +190,7 @@
                 android:layout_marginTop="4dp"
                 app:currency="gold"
                 app:text="@string/watch_ad_to_open" />
-
+-->
             <LinearLayout
                 android:id="@+id/open_armoire_subscriber_wrapper"
                 android:layout_width="match_parent"

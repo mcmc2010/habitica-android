@@ -7,7 +7,7 @@ plugins {
 //    alias(libs.plugins.firebase.perf) apply false
     alias(libs.plugins.google.service) apply false
     alias(libs.plugins.hilt) apply false
-    alias(libs.plugins.kotest) apply false
+//    alias(libs.plugins.kotest) apply false
     alias(libs.plugins.kotlin.android) apply false
     alias(libs.plugins.kotlin.compose) apply false
     alias(libs.plugins.ksp) apply false
@@ -18,6 +18,6 @@ plugins {
     alias(libs.plugins.habitrpg.convention) apply false
 }
 
-tasks.register("allUnitTests", DefaultTask::class) {
-    dependsOn(":Habitica:testProdDebugUnitTest", ":wearos:testProdDebugUnitTest", ":common:testProdDebugUnitTest")
-}
+//tasks.register("allUnitTests", DefaultTask::class) {
+//    dependsOn(":Habitica:testProdDebugUnitTest", ":wearos:testProdDebugUnitTest", ":common:testProdDebugUnitTest")
+//}

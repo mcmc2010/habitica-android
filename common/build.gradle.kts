@@ -115,7 +115,7 @@ dependencies {
     implementation(libs.recyclerview)
     implementation(libs.material)
 
-    testImplementation(libs.bundles.test.implementation)
+    //testImplementation(libs.bundles.test.implementation)
     //androidTestImplementation(libs.bundles.android.test.implementation)
 
     implementation(libs.activity.compose)

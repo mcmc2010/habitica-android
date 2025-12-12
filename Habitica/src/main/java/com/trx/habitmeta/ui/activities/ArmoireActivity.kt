@@ -18,8 +18,8 @@ import com.trx.habitmeta.R
 import com.trx.habitmeta.data.InventoryRepository
 import com.trx.habitmeta.databinding.ActivityArmoireBinding
 import com.trx.habitmeta.extensions.consumeWindowInsetsAbove30
-import com.trx.habitmeta.helpers.AdHandler
-import com.trx.habitmeta.helpers.AdType
+//import com.trx.habitmeta.helpers.AdHandler
+//import com.trx.habitmeta.helpers.AdType
 import com.trx.habitmeta.helpers.Analytics
 import com.trx.habitmeta.helpers.AppConfigManager
 import com.trx.habitmeta.helpers.EventCategory
@@ -28,7 +28,7 @@ import com.trx.habitmeta.helpers.ReviewManager
 import com.trx.habitmeta.ui.fragments.purchases.EventOutcomeSubscriptionBottomSheetFragment
 import com.trx.habitmeta.ui.fragments.purchases.EventOutcomeSubscriptionBottomSheetFragment.Companion.EVENT_ARMOIRE_OPENED
 import com.trx.habitmeta.ui.viewmodels.MainUserViewModel
-import com.trx.habitmeta.ui.views.ads.AdButton
+//import com.trx.habitmeta.ui.views.ads.AdButton
 import com.trx.habitmeta.ui.views.dialogs.HabiticaBottomSheetDialog
 import com.trx.habitmeta.common.extensions.dpToPx
 import com.trx.habitmeta.common.extensions.loadImage
@@ -96,11 +96,11 @@ class ArmoireActivity : BaseActivity() {
             configure(lastType ?: "", lastKey ?: "", lastText ?: "", lastValue)
         }
         if (hasUsedExtraArmoire) {
-            if (binding.adButton.isVisible) {
-                binding.adButton.visibility = View.INVISIBLE
-            } else {
+//            if (binding.adButton.isVisible) {
+//                binding.adButton.visibility = View.INVISIBLE
+//            } else {
                 binding.openArmoireSubscriberWrapper.visibility = View.INVISIBLE
-            }
+//            }
         }
     }
 
@@ -137,49 +137,51 @@ class ArmoireActivity : BaseActivity() {
             HabiticaCircularProgressView(indicatorSize = 60.dp)
         }
 
-        if (appConfigManager.enableArmoireAds()) {
-            val handler =
-                AdHandler(this, AdType.ARMOIRE) {
-                    if (!it) {
-                        return@AdHandler
-                    }
-                    giveUserArmoire()
-                }
-            handler.prepare {
-                if (it && binding.adButton.state == AdButton.State.LOADING) {
-                    binding.adButton.state = AdButton.State.READY
-                } else if (!it) {
-                    binding.adButton.visibility = View.INVISIBLE
-                }
-            }
-            binding.adButton.updateForAdType(AdType.ARMOIRE, lifecycleScope)
-            binding.adButton.setOnClickListener {
-                binding.adButton.state = AdButton.State.LOADING
-                handler.show()
-            }
-        } else {
-            binding.adButton.visibility = View.GONE
-        }
+//        if (appConfigManager.enableArmoireAds()) {
+//            val handler =
+//                AdHandler(this, AdType.ARMOIRE) {
+//                    if (!it) {
+//                        return@AdHandler
+//                    }
+//                    giveUserArmoire()
+//                }
+//            handler.prepare {
+//                if (it && binding.adButton.state == AdButton.State.LOADING) {
+//                    binding.adButton.state = AdButton.State.READY
+//                } else if (!it) {
+//                    binding.adButton.visibility = View.INVISIBLE
+//                }
+//            }
+//            binding.adButton.updateForAdType(AdType.ARMOIRE, lifecycleScope)
+//            binding.adButton.setOnClickListener {
+//                binding.adButton.state = AdButton.State.LOADING
+//                handler.show()
+//            }
+//        }
+//        else
+//        {
+//            binding.adButton.visibility = View.GONE
+//        }
 
-        if (appConfigManager.enableArmoireSubs()) {
-            if (!hasUsedExtraArmoire) {
-                userViewModel.user.observe(this) {
-                    if (it?.isSubscribed == true && binding.openArmoireSubscriberWrapper.visibility != View.INVISIBLE) {
-                        binding.openArmoireSubscriberWrapper.visibility = View.VISIBLE
-                        binding.unsubbedWrapper.visibility = View.GONE
-                        binding.dropRateButton.visibility = View.VISIBLE
-                    } else if (it?.isSubscribed == false) {
-                        binding.openArmoireSubscriberWrapper.visibility = View.GONE
-                        binding.unsubbedWrapper.visibility = View.VISIBLE
-                        binding.dropRateButton.visibility = View.GONE
-                    }
-                }
-            }
-        } else {
+//        if (appConfigManager.enableArmoireSubs()) {
+//            if (!hasUsedExtraArmoire) {
+//                userViewModel.user.observe(this) {
+//                    if (it?.isSubscribed == true && binding.openArmoireSubscriberWrapper.visibility != View.INVISIBLE) {
+//                        binding.openArmoireSubscriberWrapper.visibility = View.VISIBLE
+//                        binding.unsubbedWrapper.visibility = View.GONE
+//                        binding.dropRateButton.visibility = View.VISIBLE
+//                    } else if (it?.isSubscribed == false) {
+//                        binding.openArmoireSubscriberWrapper.visibility = View.GONE
+//                        binding.unsubbedWrapper.visibility = View.VISIBLE
+//                        binding.dropRateButton.visibility = View.GONE
+//                    }
+//                }
+//            }
+       // } else {
             binding.openArmoireSubscriberWrapper.visibility = View.GONE
             binding.unsubbedWrapper.visibility = View.GONE
             binding.dropRateButton.visibility = View.VISIBLE
-        }
+       // }
 
         binding.openArmoireSubscriberButton.setOnClickListener {
             Analytics.sendEvent("Free armoire perk", EventCategory.BEHAVIOUR, HitType.EVENT)
@@ -274,10 +276,11 @@ class ArmoireActivity : BaseActivity() {
 
         val user = userViewModel.user.value ?: return true
         val currentGold = user.stats?.gp ?: return true
-        if (binding.adButton.isVisible) {
-            binding.adButton.state = AdButton.State.UNAVAILABLE
-            binding.adButton.visibility = View.INVISIBLE
-        } else if (binding.openArmoireSubscriberWrapper.isVisible) {
+//        if (binding.adButton.isVisible) {
+//            binding.adButton.state = AdButton.State.UNAVAILABLE
+//            binding.adButton.visibility = View.INVISIBLE
+//        } else
+        if (binding.openArmoireSubscriberWrapper.isVisible) {
             binding.openArmoireSubscriberWrapper.visibility = View.INVISIBLE
         }
         lifecycleScope.launch(ExceptionHandler.coroutine()) {

@@ -94,7 +94,7 @@
                     android:layout_marginHorizontal="24dp"
                     android:text="@string/faint_button"
                     android:textStyle="bold" />
-
+<!--
             <com.trx.habitmeta.ui.views.ads.AdButton
                     android:id="@+id/ad_button"
                     android:layout_width="match_parent"
@@ -104,7 +104,7 @@
                     android:visibility="gone"
                     app:text="@string/watch_ad_to_hang_on"
                     app:textColor="@color/text_primary" />
-
+-->
             <LinearLayout
                     android:id="@+id/revive_subscriber_wrapper"
                     android:layout_width="match_parent"

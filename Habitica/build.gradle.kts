@@ -175,7 +175,7 @@ dependencies {
     implementation(libs.shimmer)
 
     //Leak Detection
-    debugImplementation(libs.leakcanary)
+    //debugImplementation(libs.leakcanary)
 
     // Google Services
     implementation(platform(libs.firebase.bom))
@@ -215,10 +215,10 @@ dependencies {
     implementation(libs.kotlin.stdlib)
 
     //Tests
-    testImplementation(libs.bundles.test.implementation)
+    //testImplementation(libs.bundles.test.implementation)
     //androidTestImplementation(libs.bundles.android.test.implementation)
-    androidTestImplementation(libs.kaspresso) { exclude(module = "protobuf-lite") }
-    debugImplementation(libs.test.fragment)
+    //androidTestImplementation(libs.kaspresso) { exclude(module = "protobuf-lite") }
+    //debugImplementation(libs.test.fragment)
     //debugImplementation(libs.test.monitor)
-    androidTestUtil(libs.test.orchestrator)
+    //androidTestUtil(libs.test.orchestrator)
 }

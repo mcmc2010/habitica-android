@@ -20,7 +20,7 @@ import androidx.lifecycle.DefaultLifecycleObserver
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.ProcessLifecycleOwner
 import androidx.preference.PreferenceManager
-import com.google.android.gms.wearable.Wearable
+//import com.google.android.gms.wearable.Wearable
 import com.google.firebase.installations.FirebaseInstallations
 import com.google.firebase.remoteconfig.ConfigUpdate
 import com.google.firebase.remoteconfig.ConfigUpdateListener
@@ -29,7 +29,7 @@ import com.google.firebase.remoteconfig.FirebaseRemoteConfigException
 import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings
 import com.trx.habitmeta.data.ApiClient
 import com.trx.habitmeta.extensions.DateUtils
-import com.trx.habitmeta.helpers.AdHandler
+//import com.trx.habitmeta.helpers.AdHandler
 import com.trx.habitmeta.helpers.Analytics
 import com.trx.habitmeta.helpers.notifications.PushNotificationManager
 import com.trx.habitmeta.helpers.notifications.PushNotificationManager.Companion.DEVICE_TOKEN_PREFERENCE_KEY
@@ -142,7 +142,7 @@ abstract class HabiticaBaseApplication : Application(), Application.ActivityLife
         setLocale()
         setupRemoteConfig()
         setupNotifications()
-        setupAdHandler()
+        //setupAdHandler()
         HabiticaIconsHelper.init(this)
         MarkdownParser.setup(this)
         AppCompatDelegate.setCompatVectorFromResourcesEnabled(true)
@@ -185,9 +185,9 @@ abstract class HabiticaBaseApplication : Application(), Application.ActivityLife
         }
     }
 
-    private fun setupAdHandler() {
-        AdHandler.setup(sharedPrefs)
-    }
+//    private fun setupAdHandler() {
+//        AdHandler.setup(sharedPrefs)
+//    }
 
     private fun setLocale() {
         val resources = resources
@@ -385,7 +385,7 @@ abstract class HabiticaBaseApplication : Application(), Application.ActivityLife
                 pushManager?.clearUser()
 
                 instance?.lazyApiHelper?.updateAuthenticationCredentials(null, null)
-                Wearable.getCapabilityClient(context).removeLocalCapability("provide_auth")
+                //Wearable.getCapabilityClient(context).removeLocalCapability("provide_auth")
                 startActivity(OnboardingActivity::class.java, context)
             }
         }

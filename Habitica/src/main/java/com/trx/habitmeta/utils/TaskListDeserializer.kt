@@ -1,6 +1,6 @@
 package com.trx.habitmeta.utils
 
-import com.google.firebase.perf.FirebasePerformance
+//import com.google.firebase.perf.FirebasePerformance
 import com.google.gson.JsonArray
 import com.google.gson.JsonDeserializationContext
 import com.google.gson.JsonDeserializer
@@ -21,8 +21,8 @@ class TaskListDeserializer : JsonDeserializer<TaskList> {
     ): TaskList {
         val tasks = TaskList()
         val taskMap = HashMap<String, Task>()
-        val deserializeTrace = FirebasePerformance.getInstance().newTrace("TaskListDeserialize")
-        deserializeTrace.start()
+//        val deserializeTrace = FirebasePerformance.getInstance().newTrace("TaskListDeserialize")
+//        deserializeTrace.start()
         var databaseTags: List<Tag>
         try {
             val realm = Realm.getDefaultInstance()
@@ -47,7 +47,7 @@ class TaskListDeserializer : JsonDeserializer<TaskList> {
         }
 
         tasks.tasks = taskMap
-        deserializeTrace.stop()
+        //deserializeTrace.stop()
         return tasks
     }
 

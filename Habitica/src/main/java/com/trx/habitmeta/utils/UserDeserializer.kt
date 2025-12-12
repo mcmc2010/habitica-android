@@ -1,6 +1,6 @@
 package com.trx.habitmeta.utils
 
-import com.google.firebase.perf.FirebasePerformance
+//import com.google.firebase.perf.FirebasePerformance
 import com.google.gson.JsonDeserializationContext
 import com.google.gson.JsonDeserializer
 import com.google.gson.JsonElement
@@ -42,8 +42,8 @@ class UserDeserializer : JsonDeserializer<User> {
         typeOfT: Type,
         context: JsonDeserializationContext
     ): User {
-        val deserializeTrace = FirebasePerformance.getInstance().newTrace("UserDeserialize")
-        deserializeTrace.start()
+//        val deserializeTrace = FirebasePerformance.getInstance().newTrace("UserDeserialize")
+//        deserializeTrace.start()
         val user = User()
         val obj = json.asJsonObject
 
@@ -214,7 +214,7 @@ class UserDeserializer : JsonDeserializer<User> {
                 user.abTests?.add(test)
             }
         }
-        deserializeTrace.stop()
+//        deserializeTrace.stop()
         return user
     }
 }

@@ -37,8 +37,8 @@ import com.trx.habitmeta.databinding.ActivityDeathBinding
 import com.trx.habitmeta.extensions.DateUtils
 import com.trx.habitmeta.extensions.consumeWindowInsetsAbove30
 import com.trx.habitmeta.extensions.getShortRemainingString
-import com.trx.habitmeta.helpers.AdHandler
-import com.trx.habitmeta.helpers.AdType
+//import com.trx.habitmeta.helpers.AdHandler
+//import com.trx.habitmeta.helpers.AdType
 import com.trx.habitmeta.helpers.Analytics
 import com.trx.habitmeta.helpers.AppConfigManager
 import com.trx.habitmeta.helpers.EventCategory
@@ -48,7 +48,7 @@ import com.trx.habitmeta.ui.viewmodels.MainUserViewModel
 import com.trx.habitmeta.ui.views.HabiticaIconsHelper
 import com.trx.habitmeta.ui.views.HabiticaSnackbar
 import com.trx.habitmeta.ui.views.SnackbarActivity
-import com.trx.habitmeta.ui.views.ads.AdButton
+//import com.trx.habitmeta.ui.views.ads.AdButton
 import com.trx.habitmeta.common.extensions.fromHtml
 import com.trx.habitmeta.common.extensions.observeOnce
 import com.trx.habitmeta.common.helpers.Animations
@@ -118,32 +118,32 @@ class DeathActivity : BaseActivity(), SnackbarActivity {
                 ).fromHtml()
         }
 
-        if (appConfigManager.enableFaintAds()) {
-            val handler =
-                AdHandler(this, AdType.FAINT) {
-                    if (!it) {
-                        return@AdHandler
-                    }
-                    lifecycleScope.launch(ExceptionHandler.coroutine()) {
-                        userRepository.updateUser("stats.hp", 1)
-                        finish()
-                    }
-                }
-            handler.prepare {
-                if (it && binding.adButton.state == AdButton.State.LOADING) {
-                    binding.adButton.state = AdButton.State.READY
-                } else if (!it) {
-                    binding.adButton.visibility = View.INVISIBLE
-                }
-            }
-            binding.adButton.updateForAdType(AdType.FAINT, lifecycleScope)
-            binding.adButton.setOnClickListener {
-                binding.adButton.state = AdButton.State.LOADING
-                handler.show()
-            }
-        } else {
-            binding.adButton.visibility = View.GONE
-        }
+//        if (appConfigManager.enableFaintAds()) {
+//            val handler =
+//                AdHandler(this, AdType.FAINT) {
+//                    if (!it) {
+//                        return@AdHandler
+//                    }
+//                    lifecycleScope.launch(ExceptionHandler.coroutine()) {
+//                        userRepository.updateUser("stats.hp", 1)
+//                        finish()
+//                    }
+//                }
+//            handler.prepare {
+//                if (it && binding.adButton.state == AdButton.State.LOADING) {
+//                    binding.adButton.state = AdButton.State.READY
+//                } else if (!it) {
+//                    binding.adButton.visibility = View.INVISIBLE
+//                }
+//            }
+//            binding.adButton.updateForAdType(AdType.FAINT, lifecycleScope)
+//            binding.adButton.setOnClickListener {
+//                binding.adButton.state = AdButton.State.LOADING
+//                handler.show()
+//            }
+//        } else {
+//            binding.adButton.visibility = View.GONE
+//        }
 
         if (appConfigManager.enableFaintSubs()) {
             userViewModel.user.observe(this) {

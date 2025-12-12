@@ -8,7 +8,7 @@ import androidx.core.os.bundleOf
 //import com.amplitude.android.events.Identify
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.crashlytics.FirebaseCrashlytics
-import com.google.firebase.perf.FirebasePerformance
+//import com.google.firebase.perf.FirebasePerformance
 import com.trx.habitmeta.BuildConfig
 import com.trx.habitmeta.R
 
@@ -133,7 +133,7 @@ object Analytics {
         executeLambda(AnalyticsTarget.FIREBASE) {
             firebase.setAnalyticsCollectionEnabled(isEnabled)
         }
-        FirebasePerformance.getInstance().isPerformanceCollectionEnabled = isEnabled
+//        FirebasePerformance.getInstance().isPerformanceCollectionEnabled = isEnabled
 //        executeLambda(AnalyticsTarget.AMPLITUDE) {
 //            amplitude.configuration.optOut = !isEnabled
 //        }

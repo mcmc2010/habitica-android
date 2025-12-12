@@ -13,6 +13,7 @@ import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.provider.Settings.ACTION_REQUEST_SCHEDULE_EXACT_ALARM
+import android.util.Log
 import android.view.KeyEvent
 import android.view.MenuItem
 import android.view.View
@@ -51,8 +52,8 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.NavDestination
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
-import com.google.android.gms.wearable.Wearable
-import com.google.firebase.perf.FirebasePerformance
+//import com.google.android.gms.wearable.Wearable
+//import com.google.firebase.perf.FirebasePerformance
 import com.trx.habitmeta.BuildConfig
 import com.trx.habitmeta.MainNavDirections
 import com.trx.habitmeta.R
@@ -220,29 +221,31 @@ open class MainActivity : BaseActivity(), SnackbarActivity {
         return binding.root
     }
 
-    private var launchTrace: com.google.firebase.perf.metrics.Trace? = null
+    //private var launchTrace: com.google.firebase.perf.metrics.Trace? = null
 
     public override fun onCreate(savedInstanceState: Bundle?) {
         if (BuildConfig.DEBUG) {
             mainActivityCreatedAt = Date()
         }
-        try {
-            launchTrace = FirebasePerformance.getInstance().newTrace("MainActivityLaunch")
-        } catch (e: IllegalStateException) {
-            ExceptionHandler.reportError(e)
-        }
-        launchTrace?.start()
+//        try {
+//            launchTrace = FirebasePerformance.getInstance().newTrace("MainActivityLaunch")
+//        } catch (e: IllegalStateException) {
+//            ExceptionHandler.reportError(e)
+//        }
+//        launchTrace?.start()
         super.onCreate(savedInstanceState)
         DataBindingUtils.configManager = appConfigManager
 
+        Log.i("habitmeta", "Authenticated: " + viewModel.isAuthenticated)
         if (!viewModel.isAuthenticated) {
             val intent = Intent(this, OnboardingActivity::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
             startActivity(intent)
             return
-        } else {
-            Wearable.getCapabilityClient(this).addLocalCapability("provide_auth")
         }
+//        else {
+//            Wearable.getCapabilityClient(this).addLocalCapability("provide_auth")
+//        }
 
         setupToolbar(binding.content.toolbar)
 
@@ -594,8 +597,8 @@ open class MainActivity : BaseActivity(), SnackbarActivity {
             NotificationOpenHandler.handleOpenedByNotification(identifier, intent)
         }
 
-        launchTrace?.stop()
-        launchTrace = null
+//        launchTrace?.stop()
+//        launchTrace = null
 
         if (binding.content.toolbarTitle.text?.isNotBlank() != true) {
             navigationController.currentDestination?.let { updateToolbarTitle(it, null) }

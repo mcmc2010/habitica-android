@@ -32,9 +32,9 @@ import androidx.core.view.WindowCompat
 import androidx.lifecycle.lifecycleScope
 import androidx.preference.PreferenceManager
 import com.google.android.gms.tasks.Tasks
-import com.google.android.gms.wearable.CapabilityClient
-import com.google.android.gms.wearable.MessageClient
-import com.google.android.gms.wearable.Wearable
+//import com.google.android.gms.wearable.CapabilityClient
+//import com.google.android.gms.wearable.MessageClient
+//import com.google.android.gms.wearable.Wearable
 import com.trx.habitmeta.R
 import com.trx.habitmeta.databinding.ActivityLoginBinding
 import com.trx.habitmeta.extensions.AuthenticationErrors
@@ -150,32 +150,32 @@ class OnboardingActivity: BaseActivity() {
         finish()
     }
 
-    private fun sendAuthToWearables(response: UserAuthResponse) {
-        lifecycleScope.launch(Dispatchers.IO) {
-            val messageClient: MessageClient = Wearable.getMessageClient(this@OnboardingActivity)
-            val capabilityClient: CapabilityClient = Wearable.getCapabilityClient(this@OnboardingActivity)
-            try {
-                val info =
-                    Tasks.await(
-                        capabilityClient.getCapability(
-                            "receive_message",
-                            CapabilityClient.FILTER_REACHABLE,
-                        ),
-                    )
-                info.nodes.forEach {
-                    Tasks.await(
-                        messageClient.sendMessage(
-                            it.id,
-                            "/auth",
-                            "${response.id}:${response.apiToken}".toByteArray(),
-                        ),
-                    )
-                }
-            } catch (_: Exception) {
-                // Wearable API is not available on this device.
-            }
-        }
-    }
+//    private fun sendAuthToWearables(response: UserAuthResponse) {
+//        lifecycleScope.launch(Dispatchers.IO) {
+//            val messageClient: MessageClient = Wearable.getMessageClient(this@OnboardingActivity)
+//            val capabilityClient: CapabilityClient = Wearable.getCapabilityClient(this@OnboardingActivity)
+//            try {
+//                val info =
+//                    Tasks.await(
+//                        capabilityClient.getCapability(
+//                            "receive_message",
+//                            CapabilityClient.FILTER_REACHABLE,
+//                        ),
+//                    )
+//                info.nodes.forEach {
+//                    Tasks.await(
+//                        messageClient.sendMessage(
+//                            it.id,
+//                            "/auth",
+//                            "${response.id}:${response.apiToken}".toByteArray(),
+//                        ),
+//                    )
+//                }
+//            } catch (_: Exception) {
+//                // Wearable API is not available on this device.
+//            }
+//        }
+//    }
 
     private fun showError(error: AuthenticationErrors) {
         val alert = HabiticaAlertDialog(this)
